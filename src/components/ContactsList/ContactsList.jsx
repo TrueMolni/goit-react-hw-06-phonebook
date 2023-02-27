@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import scss from './contacts-list.module.scss';
-import ContactsItem from 'components/ContactsItem/ContactsItem';
+import ContactsItem from 'components/ContactsItem';
 
 const ContactsList = ({ contacts, removeContact }) => {
   const myContacts = contacts.map(({ id, name, number }) => {

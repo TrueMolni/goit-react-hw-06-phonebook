@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+// import { useSelector } from 'react-redux';
+
 import scss from './phonebook.module.scss';
+// import store from 'redux/store';
 
 const inititalState = { name: '', number: '' };
 
 const Phonebook = ({ onSubmit }) => {
   const [state, setState] = useState({ ...inititalState });
+  // const phoneContacts = useSelector(store => store.contacts);
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
